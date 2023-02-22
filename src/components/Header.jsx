@@ -1,12 +1,12 @@
 import React from "react";
-import gcLogo from "../assets/logo-black.png"
+import gcLogo from "../assets/gc-logo.png"
 
 const Header = () => {
     return (
-        <nav>
-            <header>
+        <header>
+            <nav>
                 <a href="index.html">
-                    <img src={gcLogo} alt="Logo" />
+                    <img src={gcLogo} alt="Logo" class="nav-logo"/>
                 </a>
                 <ul class="nav-menu">
                     <li class="menu-item">
@@ -16,9 +16,8 @@ const Header = () => {
                         <a href="#">About Us</a>
                     </li>
                 </ul>
-            </header>
-        </nav>
-
+            </nav>
+        </header>
     )
 }
 

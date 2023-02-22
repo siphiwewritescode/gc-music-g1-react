@@ -1,0 +1,64 @@
+header{
+    padding: 9px 76px;
+    border-bottom: 1px solid;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    width: 140px;
+    display: block;
+}
+
+.nav-logo img{
+    width: 100%;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item a:hover{
+    color: red;
+}
+
+.songs-section{
+    padding: 72px 76px;
+}
+
+.songs-list {
+    display: grid;
+    grid-template-columns: 1f 1f 1f 1f;
+    gap: 15px;
+    justify-items: center;
+}
+
+.song-item img{
+    width: 250px;
+}
+
+.song-info > * {
+    margin: 0;
+}
+
+.song-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.song-wrapper img{
+    width: 500px;
+}
