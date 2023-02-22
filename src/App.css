@@ -40,7 +40,7 @@ nav{
 
 .songs-list {
     display: grid;
-    grid-template-columns: 1f 1f 1f 1f;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
     justify-items: center;
 }

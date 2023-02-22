@@ -6,13 +6,13 @@ const Header = () => {
         <header>
             <nav>
                 <a href="index.html">
-                    <img src={gcLogo} alt="Logo" class="nav-logo"/>
+                    <img src={gcLogo} alt="Logo" className="nav-logo"/>
                 </a>
-                <ul class="nav-menu">
-                    <li class="menu-item">
+                <ul className="nav-menu">
+                    <li className="menu-item">
                         <a href="#">Songs</a>
                     </li>
-                    <li class="menu-item">
+                    <li className="menu-item">
                         <a href="#">About Us</a>
                     </li>
                 </ul>

@@ -1,12 +1,15 @@
 import React from "react";
-import SongItem from './SongItem';
+import {useParams} from "react-router-dom"
+import Header from "../components/Header";
 
 import fireboydml from "../assets/img/fdml-bandana.jpg"
 import akaenergy from "../assets/img/aka-energy.jpg"
 import bbangelina from "../assets/img/bb-angelina.png"
 import temsfreemind from "../assets/img/tems-freemind.jpg"
 
-const SongSection = () =>{
+const Song = () => {
+    const {id} = useParams()
+
     const songs = [
         {
             "songurl": "song-1.html",
@@ -35,15 +38,22 @@ const SongSection = () =>{
         }
     ]
 
-    return(
-        <section className="songs-section">
-            <div className="songs-list">
-                {
-                    songs.map((song, idx)=> (<SongItem key={idx} song={song}/>))
-                }                
+    let currSong = songs[+id]
+
+    return (       
+      <main>
+        <Header />
+        <section className="song-section">
+            <div className="song-wrapper">
+                <img src={currSong.songimg} alt={`${currSong.artistname} - ${currSong.songname}`} />
+                <div className="song-info">
+                    <h3>{currSong.artistname}</h3>
+                    <h4>{currSong.songname}</h4>
+                </div>
             </div>
         </section>
+      </main>
     )
 }
 
-export default SongSection
+export default Song
