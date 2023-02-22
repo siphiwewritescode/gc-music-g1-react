@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import gcLogo from "../assets/gc-logo.png"
 
 const Header = () => {
     return (
         <header>
             <nav>
-                <a href="index.html">
+                <Link to="/">
                     <img src={gcLogo} alt="Logo" className="nav-logo"/>
-                </a>
+                </Link>
                 <ul className="nav-menu">
                     <li className="menu-item">
                         <a href="#">Songs</a>

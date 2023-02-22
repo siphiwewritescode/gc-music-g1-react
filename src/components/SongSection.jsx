@@ -39,7 +39,7 @@ const SongSection = () =>{
         <section className="songs-section">
             <div className="songs-list">
                 {
-                    songs.map((song, idx)=> (<SongItem key={idx} song={song}/>))
+                    songs.map((song, idx)=> (<SongItem key={idx} song={song} idx={idx}/>))
                 }                
             </div>
         </section>
